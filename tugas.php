@@ -21,3 +21,26 @@ if ($nilai >= 85 && $nilai <= 100) {
 }
 
 echo "Nilai: $nilai, Peringkat: $peringkat";
+
+
+// FUNGSI
+
+function getGrade($nilai) {
+    if ($nilai >= 85 && $nilai <= 100) {
+        return "A";
+    } elseif ($nilai >= 75 && $nilai <= 84) {
+        return "B";
+    } elseif ($nilai >= 60 && $nilai <= 74) {
+        return "C";
+    } elseif ($nilai >= 50 && $nilai <= 59) {
+        return "D";
+    } else {
+        return "E";
+    }
+}
+
+$nilai = getGrade(20);
+echo "Gradenya adalah " . $nilai;
+
+$nilai = getGrade(50);
+echo "Gradenya adalah " . $nilai;
