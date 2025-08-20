@@ -6,7 +6,7 @@
 // rentang nilai 50 - 59  peringkat huruf D
 // rentang nilai 0 - 49   peringkat huruf E
 
-$nilai = 78; // contoh nilai
+$nilai = 75; // contoh nilai
 
 if ($nilai >= 85 && $nilai <= 100) {
     $peringkat = "A";
