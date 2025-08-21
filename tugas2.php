@@ -4,6 +4,10 @@
 
 class Tumbler{
     function __construct(public string $color, public float $capacity, public string $material, public string $height, public string $brand) {}
+
+    public function fill(string $water) {
+        echo "Filling tumbler with $water";
+    }
 }
 
 $tumbler = new Tumbler('Black', 500, 'Stainless Steel', '15cm', 'Hactiv8');
